@@ -7,7 +7,9 @@ button.addEventListener("click", function() {
     if (cat.classList.contains("show")) {
         cat.classList.remove("show")
         button.innerText="Wait! Come Back!!"
+        button.classList.add("disappear")
     } else {
         cat.classList.add("show")
-        button.innerText="shoo, cat!!"}
+        button.innerText="shoo, cat!!"
+        button.classList.remove("disappear")}
 });
